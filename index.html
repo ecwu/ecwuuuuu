@@ -21,9 +21,19 @@
             });
         });
     </script>
+    <script type="text/javascript">
+      var picURL = ["nbg","bg","bg3","bg4","bg5"];
+      var logoURL = ["white","white","white","black","black"]
+      function backgroundSet(){
+        var position = Math.floor(Math.random()*4);
+        document.getElementsByTagName("body")[0].setAttribute("style","background-image: url(https://cdn.ecwuuuuu.com/"+ picURL[position] +".jpg)")
+        document.getElementById("web-icon").src = 'https://cdn.ecwuuuuu.com/'+ logoURL[position] +'.svg';
+      return picURL[position];
+      }
+    </script>
   </head>
 
-  <body>
+  <body onload="backgroundSet()">
 
     <div class="site-wrapper">
 
@@ -33,8 +43,9 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <img class="masthead-brand img-fluid" src="https://cdn.ecwuuuuu.com/logo.png">
+              <img class="masthead-brand img-fluid" id="web-icon" src="" width="372px">
               <nav class="nav nav-masthead">
+                <a class="nav-link" href="https://www.ecwuuuuu.com/wam">WAM</a>
                 <a class="nav-link active" href="https://www.ecwuuuuu.com">Home</a>
                 <a class="nav-link" href="https://www.ecwuuuuu.com/blog">Blog</a>
                 <a class="nav-link" href="https://www.ecwuuuuu.com/blog/about">About</a>
@@ -53,7 +64,7 @@
           <div class="mastfoot">
             <div class="inner">
               <p>&copy; ECWU 2017, Support <span class="ssl">HTTPS</span></p>
-              <p><a href="http://www.miitbeian.gov.cn/">粤 ICP 备 17015575 号</a></p>
+              <p><a href="http://www.miitbeian.gov.cn/">粤 ICP 备 17015575 - 1 号</a></p>
             </div>
           </div>
 
