@@ -23,10 +23,10 @@
     </script>
     <script type="text/javascript">
       var picURL = ["nbg","bg","bg3","bg4","bg5"];
-      var logoURL = ["white","white","white","black","black"]
+      var logoURL = ["white","white","white","black","black"];
       function backgroundSet(){
         var position = Math.floor(Math.random()*4);
-        document.getElementsByTagName("body")[0].setAttribute("style","background-image: url(https://cdn.ecwuuuuu.com/"+ picURL[position] +".jpg)")
+        document.getElementsByTagName("body")[0].setAttribute("style","background-image: url(https://cdn.ecwuuuuu.com/"+ picURL[position] +".jpg)");
         document.getElementById("web-icon").src = 'https://cdn.ecwuuuuu.com/'+ logoURL[position] +'.svg';
       return picURL[position];
       }
