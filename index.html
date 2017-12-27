@@ -8,7 +8,7 @@
     <title>Jack Wu's playground</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
     <!-- Typed.js Script -->
@@ -22,59 +22,57 @@
         });
     </script>
     <script type="text/javascript">
-      var picURL = ["bg1","bg2","bg3","bg4","bg5"];
       var logoURL = ["white","white","white","white","white"];
       function backgroundSet(){
         var position = Math.floor(Math.random()*4);
-        document.getElementsByTagName("body")[0].setAttribute("style","background-image: url(https://cdn.ecwuuuuu.com/"+ picURL[position] +".jpg)");
+        document.getElementsByTagName("div")[0].setAttribute("style","background-image: url(http://api.dujin.org/bing/1920.php)");
         document.getElementById("web-icon").src = 'https://cdn.ecwuuuuu.com/'+ logoURL[position] +'.svg';
-      return picURL[position];
       }
     </script>
   </head>
 
   <body onload="backgroundSet()">
 
-    <div class="site-wrapper">
+        <div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
+          <div class="site-wrapper-inner" style="background-color: rgba(0, 0, 0, 0.7);">
 
-        <div class="cover-container">
+            <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <img class="masthead-brand img-fluid" id="web-icon" src="" width="372px">
-              <nav class="nav nav-masthead">
-                <a class="nav-link active" href="https://www.ecwuuuuu.com">Home</a>
-                <a class="nav-link" href="https://blog.ecwuuuuu.com">Blog</a>
-              </nav>
+              <div class="masthead clearfix">
+                <div class="inner">
+                  <img class="masthead-brand img-fluid" id="web-icon" src="" width="372px">
+                  <nav class="nav nav-masthead">
+                    <a class="nav-link active" href="https://www.ecwuuuuu.com">Home</a>
+                    <a class="nav-link" href="https://blog.ecwuuuuu.com">Blog</a>
+                  </nav>
+                </div>
+              </div>
+
+              <div class="inner cover">
+                <h1 class="cover-heading">Welcome to my 'playground'</h1>
+                <p class="lead">I am a Computer Science student, I like <span class="element lead"></span></p>
+                <p class="lead">
+                  <a href="https://blog.ecwuuuuu.com" class="btn btn-outline-success">Enter</a>
+                </p>
+              </div>
+
+              <div class="mastfoot">
+                <div class="inner">
+                  <p>&copy; ECWU 2017, Support <span class="ssl">HTTPS</span> & <span class="http2">HTTP/2</span></p>
+                  <p><a href="http://www.miitbeian.gov.cn/">粤 ICP 备 17015575 - 1 号</a></p>
+                </div>
+              </div>
+
             </div>
-          </div>
 
-          <div class="inner cover">
-            <h1 class="cover-heading">Welcome to my 'playground'</h1>
-            <p class="lead">I am a Computer Science student, I like <span class="element lead"></span></p>
-            <p class="lead">
-              <a href="https://blog.ecwuuuuu.com" class="btn btn-outline-success">Enter</a>
-            </p>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>&copy; ECWU 2017, Support <span class="ssl">HTTPS</span> & <span class="http2">HTTP/2</span></p>
-              <p><a href="http://www.miitbeian.gov.cn/">粤 ICP 备 17015575 - 1 号</a></p>
-            </div>
           </div>
 
         </div>
-
-      </div>
-
-    </div>
-
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   </body>
 </html>
